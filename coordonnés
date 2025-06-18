@@ -1,0 +1,15 @@
+# Station names
+name  =  LETTERS[1:10]
+
+# Longitude and latitude for weather stations near Québec-city
+longitude  =  c(-71.25, -71.10, -71.30, -71.50, -71.60,
+               -71.45, -71.40, -71.20, -71.15, -71.35)
+latitude  =  c(46.85, 46.90, 46.80, 46.95, 46.75,
+              46.70, 46.65, 46.82, 46.87, 46.77)
+
+stations  =  data.frame(name, longitude, latitude)
+
+# Latitude and longitude for Québec
+quebec = cbind(-71.2080, 46.8139)
+
+plot(stations$longitude, stations$latitude)
